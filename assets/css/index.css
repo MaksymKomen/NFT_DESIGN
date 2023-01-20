@@ -1,0 +1,212 @@
+@import url("sidebar.css");
+@import url("app.css");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 100px 200px;
+}
+.title{
+  display: flex;
+  align-items: baseline;
+  column-gap: 20px;
+  margin-bottom: 50px;
+}
+.title-main h1{
+  color: #f1d56e;
+  font-size: 80px;
+  margin: 0;
+}
+.title-description p{
+  color: #f1d56e;
+  font-size: 24px;
+}
+.content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; 
+}
+
+.button-group{
+  display: flex;
+  column-gap: 20px;
+  position: relative;
+}
+
+.button-group button {
+  background-color: #132A2D;
+  color: #D7C1AE;
+  border: 1px solid #E3D18E;
+  border-radius: 15px;
+  width: 200px;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+img{
+  width: 90%;
+}
+
+.how-to-play{
+  position: absolute;
+  right: 0;
+  top:60px;
+  width: 700px;
+  background-color: #132A2D;
+  border: 1px solid #E3D18E;
+  border-radius: 5px;
+  padding: 20px 0;
+  padding-right: 20px;
+}
+
+.how-to-play h2 {
+  color: cyan;
+  font-size: 30px;
+  margin: 0;
+  margin-left: 15px;
+  margin-bottom: 15px;
+} 
+
+ol{
+  margin: 0;
+}
+ol li {
+  font-size: 24px;
+  color: #E5E8E8;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1600px) {
+  .container{
+    padding: 60px 160px;
+  }
+  .how-to-play{
+    width: 580px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container{
+    padding: 60px 80px;
+  }
+  .title-main h1{
+    font-size: 70px;
+  }
+  .title-description p{
+    font-size: 20px;
+  }
+  .button-group button {
+    width: 160px;
+    font-size: 18px;
+    padding: 4px 0;
+  }
+  img{
+    width: 90%;
+  }
+  .how-to-play{
+    width: 450px;
+  }
+  .how-to-play h2{
+    font-size: 22px;
+   
+
+  }
+  ol li {
+    font-size: 18px;
+    color: #E5E8E8;
+    margin-bottom: 18px;
+  }
+}
+
+
+@media screen and (max-width: 1130px) {
+  .container{
+    padding: 150px 60px;
+  }
+  .title-main h1{
+     font-size: 60px;
+  }
+  .title-description p{
+    font-size: 18px;
+  }
+  .button-group button {
+    width: 160px;
+    font-size: 18px;
+    padding: 4px 0;
+  }
+  .how-to-play{
+    width: 420px;
+  }
+  .how-to-play h2{
+    font-size: 18px;
+  }
+  ol li {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+ 
+  .title-main h1{
+     font-size: 50px;
+  }
+  .title-description p{
+    font-size: 16px;
+  }
+  .button-group button {
+    width: 150px;
+    font-size: 16px;
+    padding: 4px 0;
+  }
+  img{
+    width: 110%;
+  }
+  .how-to-play{
+    width: 380px;
+  }
+  .how-to-play h2{
+    font-size: 16px;
+  }
+  ol li {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container{
+    padding-top: 100px;
+  }
+  .title {
+    margin-bottom: 30px;
+  }
+  .title-main h1{
+     font-size: 30px;
+  }
+  .title-description p{
+    margin-top: 60px;
+    font-size: 12px;
+  }
+  .button-group button {
+    width: 160px;
+    font-size: 18px;
+    padding: 4px 0;
+  }
+  .content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  img{
+    width: 110%;
+  }
+  .how-to-play{
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto'
+}
+
+body {
+  background-color: black;
+  margin: 0;
+}
+
+.app {
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+}
